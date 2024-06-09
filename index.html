@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIET WebKiosk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="images.png"></div>
+        <div class="name"><img src="download.png"></div>
+        <button class="signout">SignOut</button>
+    </header>
+    <main>
+        <div class="bg"></div>
+        <div class="login">
+            <h1>Web-Kiosk(Internet) for Students/Parents</h1>
+            <div class="textfields">
+            <label class="Person">LOGIN AS:</label>
+            <select name="Person" class="person">
+                <option value="Parent">Parent</option>
+                <option value="Student">Student</option>
+            </select>
+            <label class="rollnumber" for="roll">Roll Number:</label>
+            <input type="text" name="rollnum" id="roll" placeholder="Enter Your Roll Number">
+            <label class="password" for="pass">Password:</label>
+            <input type="text" name="password" id="pass" placeholder="Enter Your Password">
+            <a href="/index.html">Forgot Password?</a>
+        </div>
+            <a href="https://webkiosk.thapar.edu/"><button class="b">Login</button></a>
+        </div>
+    </main>
+</body>
+</html>

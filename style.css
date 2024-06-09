@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px;
+    /* width: 100vw; */
+    height: 120px;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(233, 37, 37);
+}
+.logo img{
+    max-height: 120px;
+    width: auto;
+    grid-column: 1/2;
+}
+.name img{
+    grid-column: 2/3;
+    max-height: 160px;
+    width: auto;
+    filter: contrast(110%);
+    filter: brightness(110%);
+}
+.signout{
+    width: 70px;
+    height: 30px;
+    background-color: rgb(233, 37, 37);
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight:700 ;
+    border-radius: 20px;
+    border-color: red;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+}
+.bg{
+    background-image: url(-_Featured_Image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row:1/4;
+    grid-column: 1/4;
+    max-width: 100%;
+    height: auto;
+    filter: opacity(50%);
+    z-index: -1;
+}
+.login{
+    grid-row: 2/3;
+    align-items: center;
+    justify-items: center;
+    grid-column: 2/3;
+    background-color: rgba(255, 255, 255, 0.615);
+    display: grid;
+    grid-template-rows: 0.6fr 2.6fr 0.6fr;
+    width:auto;
+    height: auto;
+    font-family: sans-serif;
+    z-index: 1;
+    /* position: absolute; */
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px 1px rgba(131, 131, 131, 0.703);
+    /* top: 167px; */
+}
+.login h1{
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    grid-row: 1/2;
+    text-shadow: 10px 10px 10px 2px rgb(255, 0, 0);
+}
+.login .textfields{
+    grid-row: 2/3;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.login .b{
+    grid-row: 3/4;
+}
+.login .person{
+    display: inline-block;
+    border-radius: 20px;
+    width: 290px;
+    text-align: center;
+    font-size: medium;
+    background-color: rgba(255, 255, 255, 0.875);
+}
+.login .rollnumber{
+    font-weight: 600;
+    font-size: large;
+}
+#roll{
+    height: 40px;
+    width: 350px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.627);
+    border-color: rgba(255, 255, 255, 0.845);
+    font-size: large;
+}
+.login .password{
+    font-weight: 600;
+    font-size: large;   
+}
+#pass{
+    height: 40px;
+    width: 350px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 255, 255, 0.627);
+    border-color: rgba(255, 255, 255, 0.845);
+    font-size: large;
+}
+.login a{
+    color: red;
+    font-size: small;
+}
+.b{
+    margin-bottom: 40px;
+    height: 35px;
+    width: 200px;
+    border-color: red;
+    border-radius: 30px;
+    font-weight: 650;
+    background-color: rgb(233, 37, 37);
+    color: white;
+}
+
+@media screen and (max-width:1000px){
+    .name img{
+        width:0px;
+    }
+    .signout{
+        align-items: end;
+    }
+    .bg{
+        background-position:center;
+    }
+    .login h1{
+        font-size: larger;
+    }
+}
+
+
