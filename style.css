@@ -60,6 +60,7 @@ main{
     display: grid;
     grid-template-rows: 0.6fr 2.6fr 0.6fr;
     width:auto;
+    min-width: 300px;
     height: auto;
     font-family: sans-serif;
     z-index: 1;
@@ -149,6 +150,17 @@ main{
     }
     .login h1{
         font-size: larger;
+    }
+    .login .person{
+        width: 240px;
+    }
+    #roll{
+        width: 250px;
+        height: 34px;
+    }
+    #pass{
+        height: 34px;
+        width: 250px;
     }
 }
 
